@@ -25,7 +25,7 @@ const About = () => {
 
     const callAboutPage = async () => {
         try {
-            const res = await fetch('/about', {
+            const res = await fetch('https://bonheur-memories-server.herokuapp.com/about', {
                 method: 'GET',
                 headers: {
                     Accept: 'application/json',
@@ -48,7 +48,7 @@ const About = () => {
 
     const getMemories = async () => {
         try {
-            const res1 = await fetch('/getMemories', {
+            const res1 = await fetch('https://bonheur-memories-server.herokuapp.com/getMemories', {
                 method: 'GET',
                 headers: {
                     Accept: 'application/json',
@@ -89,7 +89,7 @@ const About = () => {
         e.preventDefault();
         const { creator, title, message, tags, selectedFile } = userData;
 
-        const res = await fetch("/about1", {
+        const res = await fetch("https://bonheur-memories-server.herokuapp.com/about1", {
             method: "POST",
             headers: {
                 Accept: 'application/json',

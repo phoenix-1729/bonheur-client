@@ -6,7 +6,7 @@ const Signout = () => {
     const {state,dispatch} = useContext(UserContext);
     const history=useHistory();
     useEffect(()=>{
-        fetch('/logout',{
+        fetch('https://bonheur-memories-server.herokuapp.com/logout',{
             method:"GET",
             headers: {
                 Accept: 'application/json',
